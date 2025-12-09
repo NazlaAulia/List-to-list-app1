@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#ADBCF8" android:state_pressed="true"/>  <!-- warna ungu muda -->
+    <item android:color="@android:color/transparent"/> <!-- normal, tanpa efek -->
+</selector>

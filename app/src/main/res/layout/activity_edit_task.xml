@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddTaskActivity"
+    android:background="@drawable/bg_gradient">
+
+
+
+    <TextView
+        android:id="@+id/text_view_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Task:"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/text_view_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_task"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Category:"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_category"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/text_view_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_spinner"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Priority:"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/priority_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_priority"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/text_view_due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priority_spinner"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Due Date:"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button_select_due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_due_date"
+        android:layout_marginTop="8dp"
+        android:text="Select Date"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#5D688A"/>
+
+    <TextView
+        android:id="@+id/selected_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_select_due_date"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#FF0000"/>
+
+    <TextView
+        android:id="@+id/text_view_due_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selected_date_text_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Due Time:"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button_select_due_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_due_time"
+        android:layout_marginTop="8dp"
+        android:text="Select Time"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#5D688A"/>
+
+    <TextView
+        android:id="@+id/selected_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_select_due_time"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#75493A"/>
+
+    <TextView
+        android:id="@+id/text_view_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selected_time_text_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Notes:"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/notes_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_notes"
+        android:layout_marginTop="8dp"
+        android:hint="Update notes"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button_add_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notes_edit_text"
+        android:layout_marginTop="16dp"
+        android:text="Edit Task"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#5D688A"/>
+
+</RelativeLayout>

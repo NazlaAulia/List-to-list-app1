@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".riwayat">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riwayat Tugas"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Filter Tanggal -->
+    <LinearLayout
+        android:id="@+id/filterContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Dari Tanggal -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dari Tanggal"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvDariTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--/--/----"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#000000"/>
+
+            <ImageButton
+                android:id="@+id/btnDariTanggal"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_calendar"
+                android:background="@null"
+                android:contentDescription="Pilih tanggal awal"/>
+        </LinearLayout>
+
+        <!-- Sampai Tanggal -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampai Tanggal"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvSampaiTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--/--/----"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#000000"/>
+
+
+
+            <ImageButton
+                android:id="@+id/btnSampaiTanggal"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_calendar"
+                android:background="@null"
+                android:contentDescription="Pilih tanggal akhir"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tombol Filter -->
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tampilkan Riwayat"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/filterContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Ringkasan Tugas -->
+    <LinearLayout
+        android:id="@+id/layoutRingkasan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="16dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnFilter"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Tugas Selesai -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/tvTotalSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tugas Selesai"
+                android:textSize="14sp"
+                android:textColor="#DEA797"/>
+        </LinearLayout>
+
+        <!-- Tugas Terlewat -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/tvTotalTerlewat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tugas Terlewat"
+                android:textSize="14sp"
+                android:textColor="@color/red"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvKosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada jadwal untuk tanggal ini"
+        android:textColor="#888888"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnFilter"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Daftar Riwayat -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRiwayat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutRingkasan"
+        tools:listitem="@layout/item_riwayat" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_nav"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

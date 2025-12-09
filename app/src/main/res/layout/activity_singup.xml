@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- 🖼 Gambar Header -->
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:src="@drawable/gambar1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000"/>
+
+        <!-- Password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/ivTogglePasswordSignup"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_visibility_off"
+                android:contentDescription="Toggle password visibility"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+
+        <!-- Tombol Sign Up -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:backgroundTint="#5D688A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="purple_500">#5D688A</color>
+    <color name="priorityHigh">#FF3B30</color>
+    <color name="priorityMedium">#C37406</color>
+    <color name="priorityLow">#317141</color>
+
+
+</resources>

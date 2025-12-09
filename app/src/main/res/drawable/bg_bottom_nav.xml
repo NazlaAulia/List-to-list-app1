@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- warna background bottom nav -->
+    <solid android:color="#54A5B4" />
+
+    <!-- radius biar melengkung di atas -->
+    <corners
+        android:topLeftRadius="25dp"
+        android:topRightRadius="25dp" />
+</shape>

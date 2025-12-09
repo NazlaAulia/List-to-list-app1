@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- 🖼 Gambar Header -->
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/gambar1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Judul -->
+
+        <!-- Email -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+
+            android:text="Welcome Back!"
+            android:textColor="#1A1A1A"
+            android:textSize="24sp"
+
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <!-- Password -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/ivTogglePasswordLogin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_visibility_off"
+            android:contentDescription="Toggle password visibility"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#5D688A"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+
+    <!-- Tombol Login -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:backgroundTint="#5D688A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <!-- Or -->
+
+    <!-- Google & Facebook -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="Or sign in with"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sign up"
+                android:backgroundTint="#5D688A"
+                android:textColor="#FFFFFF"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
