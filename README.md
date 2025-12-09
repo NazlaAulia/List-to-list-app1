@@ -1,4 +1,4 @@
-![24645ab2-ac97-45c6-9cf3-c7758abe14e4](https://github.com/user-attachments/assets/c9cd61d1-2180-4de4-a967-90eef071929d)# List To List – Smart To-Do List Application  
+ List To List – Smart To-Do List Application  
 
 List To List adalah aplikasi To-Do List berbasis Android yang dirancang untuk membantu pengguna dalam mencatat, mengatur, dan memantau tugas harian secara lebih terstruktur.  
 Aplikasi ini dikembangkan dari referensi aplikasi GitHub sederhana, kemudian ditingkatkan dengan berbagai fitur modern seperti login, kalender, prioritas tugas, riwayat, hingga notifikasi pengingat.
